@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #fff;
+    --secondary-color: #000;
+    --accent-color: #f8f9fa;
+    --link-color: #2f89fc;
+    --primary-font: 'Mulish', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: var(--primary-font);
+}
+
+a {
+    display: block;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+span,
+button {
+    display: inline-block;
+}
+
+/* ----------------------------- utility classes ---------------------------- */
+.flex {
+    display: flex;
+}
+
+/* --------------------------------- navbar --------------------------------- */
+.nav {
+    justify-content: space-between;
+    padding: 1.25rem 0.8rem;
+    border: 1px solid black;
+}
+
+.brand-icon {
+    font-size: 1.5rem;
+    color: var(--secondary-color);
+    text-transform: capitalize;
+}
+
+.nav-links {
+    gap: 0 20px;
+    font-weight: 700;
+
+}
+
+.nav-links>li:last-child {
+    cursor: pointer;
+}
+
+.nav-links a {
+    color: var(--secondary-color);
+}
+
+.nav-links a:hover,
+.offcanvas--links a:hover {
+    color: var(--link-color);
+}
+
+/* offcanvas */
+#toggler-icon,
+.overlay {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* -------------------------------------------------------------------------- */
+/*                                media-quarry                                */
+/* -------------------------------------------------------------------------- */
+@media screen and (max-width:768px) {
+    body {
+        overflow-y: hidden;
+    }
+
+    .nav {
+        padding-block: 0.4rem;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    #toggler-icon {
+        display: block;
+        font-size: 1.6rem;
+        cursor: pointer;
+    }
+
+    /* offcanvous */
+    .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 99;
+        display: none;
+        clear: both;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .offcanvas {
+        --size: 1.25rem;
+        display: flex;
+        flex-direction: column;
+        float: right;
+        padding: var(--size);
+        max-width: 100%;
+        width: 300px;
+        height: 100vh;
+        background-color: var(--accent-color);
+        transform: translateX(100%);
+        transition: all 0.4s;
+    }
+
+    .offcanvas>i {
+        margin-left: auto;
+        font-size: 1.8rem;
+        color: grey;
+    }
+
+    .offcanvas--links {
+        display: flex;
+        flex-direction: column;
+        gap: var(--size);
+        padding: 0.6rem 0;
+        font-size: var(--size);
+    }
+
+    .offcanvas--links a {
+        color: #212529;
+    }
+}
