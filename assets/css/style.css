@@ -45,11 +45,53 @@ button {
     display: flex;
 }
 
+.badge {
+    padding: 0.2rem 0.6rem;
+    font-size: 0.6rem;
+    font-weight: 700;
+    letter-spacing: 0.12rem;
+    text-transform: uppercase;
+    border-radius: 4px;
+}
+
+.badge-red {
+    background-color: #f23a2e;
+    color: var(--primary-color) !important;
+}
+
+.badge-blue {
+    background-color: #2f89fc;
+    color: var(--primary-color) !important;
+}
+
+.badge-grey {
+    background-color: #6c757d;
+    color: var(--primary-color) !important;
+}
+
+.badge-green {
+    background-color: #8bc34a;
+    color: var(--primary-color) !important;
+}
+
+.badge-orange {
+    background-color: #f89d13;
+    color: var(--primary-color) !important;
+}
+
+
+.container {
+    max-width: 1200px;
+    width: max(95%, 75%);
+    margin-inline: auto;
+}
+
+
 /* --------------------------------- navbar --------------------------------- */
 .nav {
     justify-content: space-between;
+    align-items: center;
     padding: 1.25rem 0.8rem;
-    border: 1px solid black;
 }
 
 .brand-icon {
@@ -59,12 +101,13 @@ button {
 }
 
 .nav-links {
-    gap: 0 20px;
+    gap: 0 1.25rem;
     font-weight: 700;
 
 }
 
 .nav-links>li:last-child {
+    padding-right: 1.25rem;
     cursor: pointer;
 }
 
@@ -83,6 +126,215 @@ button {
     display: none;
 }
 
+/* -------------------------------------------------------------------------- */
+/*                                    main                                    */
+/* -------------------------------------------------------------------------- */
+
+/* ------------------------- showing article on top ------------------------- */
+
+.showcase-wrapper {
+    padding-block: 5rem;
+    background-color: var(--accent-color);
+}
+
+.showcase {
+    --spacing: 1.8rem;
+    display: flex;
+    gap: var(--spacing);
+    height: 430px;
+}
+
+.showcase--item {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing);
+    width: 33.3%;
+    max-height: 100%;
+    height: calc(100% - var(--spacing));
+}
+
+.showcase--article {
+    position: relative;
+    height: 50%;
+    border-radius: 4px;
+}
+
+#showcase--overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, transparent 0%, transparent 18%, rgba(0, 0, 0, 0.8) 99%, rgba(0, 0, 0, 0.8) 100%);
+}
+
+.showcase--item a {
+    height: 100%;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.showcase--item a img {
+    height: 100%;
+    object-fit: cover;
+}
+
+/* setting height for middle image */
+.showcase--mid,
+.showcase--mid>.showcase--article {
+    height: 100%;
+}
+
+.showcase--desc {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 20;
+    width: 90%;
+    height: max-content !important;
+    padding: 1.25rem;
+    color: var(--primary-color);
+    line-height: 1.5;
+}
+
+.showcase--desc>h2 {
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding-top: 1rem;
+}
+
+.showcase--desc>span {
+    color: grey;
+}
+
+/* ------------------------------ recent-posts ------------------------------ */
+
+.recent-posts {
+    padding-block: 5rem;
+}
+
+.recent-posts h2 {
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.recent-posts--holder {
+    border-bottom: 1px solid #edf0f5;
+}
+
+.posts-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 3rem;
+}
+
+.posts {
+    width: calc(33.3% - 1.3rem);
+    margin-bottom: 1.3rem;
+}
+
+.posts-image {
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.posts--desc-wrapper {
+    padding-inline: 1.1rem;
+    margin-top: 1.8rem;
+}
+
+.posts--desc-wrapper>.badge {
+    margin-bottom: 1rem;
+}
+
+.posts--desc-wrapper>h2 {
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.posts--desc-wrapper>h2>a {
+    color: var(--secondary-color);
+}
+
+.author {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding-block: 1.8rem;
+    font-size: 0.8rem;
+    color: #b3b3b3;
+}
+
+.author--image {
+    width: 1.8rem;
+    height: 1.8rem;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.author--image>img {
+    object-fit: cover;
+}
+
+.author--details {
+    display: flex;
+}
+
+.author--details>a {
+    color: var(--secondary-color);
+}
+
+.posts--desc {
+    font-weight: 300;
+    line-height: 1.7;
+    color: #666666;
+    ;
+}
+
+.read-more {
+    margin-block: 1rem;
+    color: var(--link-color);
+}
+
+.pagination--info {
+    display: flex;
+    justify-content: center;
+    padding-top: 3rem;
+}
+
+.pagination--info li {
+    padding-right: 0.3rem;
+}
+
+.pagination--info a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    color: var(--primary-color);
+    background-color: var(--link-color);
+    border-radius: 50%;
+}
+
+.pagination--info>li:first-child a {
+    color: #808080;
+    background-color: transparent;
+}
+
+.pagination--info li:nth-child(5) a {
+    color: #808080;
+    background-color: transparent;
+}
+
+/* ----------------------------------- showcase2 ----------------------------------- */
+
+
+.showcase--item2-bottom{
+    display: flex;
+}
 
 
 
@@ -96,9 +348,33 @@ button {
 /* -------------------------------------------------------------------------- */
 /*                                media-quarry                                */
 /* -------------------------------------------------------------------------- */
-@media screen and (max-width:768px) {
+/* @media screen and (min-width: 768px) and (max-width: 1200px) {
+    .showcase--item {
+        min-height: 100%;
+    }
+    .showcase{
+        width: 100%;
+        padding-inline: 15px;
+    }
+    .showcase--item{
+        min-height: 0;
+    }
+} */
+@media screen and (max-width: 1200px) {
+    .showcase--item {
+        min-height: 100%;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    .posts {
+        width: calc(50% - 1.3rem);
+    }
+}
+
+@media screen and (max-width: 767px) {
     body {
-        overflow-y: hidden;
+        /* overflow-y: hidden; */
     }
 
     .nav {
@@ -158,5 +434,38 @@ button {
 
     .offcanvas--links a {
         color: #212529;
+    }
+
+    /* ------------------------- showing article on top ------------------------- */
+    .showcase-wrapper {
+        padding-block: 2.5rem;
+    }
+
+    .showcase {
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        padding-inline: 0.9rem;
+    }
+
+    .showcase--item {
+        width: 100%;
+    }
+
+    .showcase--mid {
+        display: none;
+    }
+
+    .showcase>.showcase--item:last-child {
+        padding-top: var(--spacing);
+    }
+
+    /* ------------------------------ recent-posts ----------------------------- */
+    .posts-wrapper {
+        display: block;
+    }
+
+    .posts {
+        width: 100%;
     }
 }

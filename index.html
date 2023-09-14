@@ -7,54 +7,462 @@
     <title>My blog</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./assets/css/style.css">
     <script defer src="./assets/js/main.js"></script>
 </head>
 
 <body>
-<!-- ----------------------------------------------------------------------- -->
-<!--                             navbar-section                              -->
-<!-- ----------------------------------------------------------------------- -->
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                             navbar-section                              -->
+    <!-- ----------------------------------------------------------------------- -->
 
-<header class="flex nav">
-    <a href="/index.html" class="brand-icon">Mini Blog</a>
-    <ul class="flex nav-links">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Politics</a></li>
-        <li><a href="#">Tech</a></li>
-        <li><a href="#">Entertainment</a></li>
-        <li><a href="#">Travel</a></li>
-        <li><a href="#">Sports</a></li>
-        <li><i class="fa-solid fa-magnifying-glass"></i></li>
-    </ul>
-    <!-- ----------------------------- mobile-screen ------------------------------ -->
-    <i class="fa-solid fa-bars" id="toggler-icon"></i>
-    <!-- offcanvas -->
-    <section class="overlay">
-        <nav class="offcanvas">
-            <i class="fa-solid fa-xmark" id="cross-icon"></i>
-            <ul class="offcanvas--links">
-                <li><a href="javascript:void(0)">Home</a></li>
-                <li><a href="javascript:void(0)">Politics</a></li>
-                <li><a href="javascript:void(0)">Tech</a></li>
-                <li><a href="javascript:void(0)">Entertainment</a></li>
-                <li><a href="javascript:void(0)">Travel</a></li>
-                <li><a href="javascript:void(0)">Sports</a></li>
-            </ul>
-        </nav>
-    </section>
-</header>
-
-
-<!-- ----------------------------------------------------------------------- -->
-<!--                              main-section                               -->
-<!-- ----------------------------------------------------------------------- -->
+    <header class="flex nav">
+        <a href="/index.html" class="brand-icon">Mini Blog</a>
+        <ul class="flex nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Politics</a></li>
+            <li><a href="#">Tech</a></li>
+            <li><a href="#">Entertainment</a></li>
+            <li><a href="#">Travel</a></li>
+            <li><a href="#">Sports</a></li>
+            <li><i class="fa-solid fa-magnifying-glass"></i></li>
+        </ul>
+        <!-- ----------------------------- mobile-screen ------------------------------ -->
+        <i class="fa-solid fa-bars" id="toggler-icon"></i>
+        <!-- offcanvas -->
+        <section class="overlay">
+            <nav class="offcanvas">
+                <i class="fa-solid fa-xmark" id="cross-icon"></i>
+                <ul class="offcanvas--links">
+                    <li><a href="javascript:void(0)">Home</a></li>
+                    <li><a href="javascript:void(0)">Politics</a></li>
+                    <li><a href="javascript:void(0)">Tech</a></li>
+                    <li><a href="javascript:void(0)">Entertainment</a></li>
+                    <li><a href="javascript:void(0)">Travel</a></li>
+                    <li><a href="javascript:void(0)">Sports</a></li>
+                </ul>
+            </nav>
+        </section>
+    </header>
 
 
-<main>
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                              main-section                               -->
+    <!-- ----------------------------------------------------------------------- -->
 
-</main>
+    <main>
+        <section class="showcase-wrapper">
+            <div class="showcase container">
+                <div class="showcase--item">
+                    <div class="showcase--article">
+                        <a href=""><img src="./assets/images/article1.webp" alt="writing on notebook image"></a>
+                        <!-- <a href=""><img
+                                src="https://images.pexels.com/photos/17397548/pexels-photo-17397548/free-photo-of-women-playing-volleyball.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                alt="writing on notebook image"></a> -->
+                        <a id="showcase--overlay" href="">
+                            <div class="showcase--desc">
+                                <h2> The AI magically removes moving objects from video. </h2>
+                                <span>July 19,2019</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="showcase--article">
+                        <a href=""><img src="./assets/images/article2.webp" alt="tablets image"></a>
+                        <!-- <a href=""><img src="./assets/images/article2.webp" alt="tablets image"></a> -->
+                        <a id="showcase--overlay" href="">
+                            <div class="showcase--desc">
+                                <h2> The AI magically removes moving objects from video. </h2>
+                                <span>July 19,2019</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="showcase--item showcase--mid">
+                    <div class="showcase--article">
+                        <a href=""><img src="./assets/images/article3.webp" alt="dog image"></a>
+                        <!-- <a href=""><img
+                                src="https://images.pexels.com/photos/18165273/pexels-photo-18165273.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                alt="dog image"></a> -->
+                        <a id="showcase--overlay" href="">
+                            <div class="showcase--desc">
+                                <span class="badge badge-red">Travel</span>
+                                <span class="badge badge-blue">Food</span>
+                                <h2> The AI magically removes moving objects from video. </h2>
+                                <span>July 19,2019</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="showcase--item">
+                    <div class="showcase--article">
+                        <a href=""><img src="./assets/images/article4.webp" alt="mountain image"></a>
+                        <a id="showcase--overlay" href="">
+                            <div class="showcase--desc">
+                                <h2> The 20 Biggest Fintech Companies In America 2019. </h2>
+                                <span>July 19,2019</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="showcase--article">
+                        <a href=""><img src="./assets/images/article5.webp" alt="man reading book image"></a>
+                        <a id="showcase--overlay" href="">
+                            <div class="showcase--desc">
+                                <h2> The 20 Biggest Fintech Companies In America 2019. </h2>
+                                <span>July 19,2019</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="recent-posts">
+            <div class="recent-posts--holder container">
+                <h2>Recent Posts</h2>
+                <div class="posts-wrapper">
+                    <div class="posts">
+                        <a href="" class="posts-image"><img src="./assets/images/article1.webp" alt=""></a>
+                        <div class="posts--desc-wrapper">
+                            <span class="badge badge-grey">POLITICS</span>
+                            <h2>
+                                <a href="">The AI magically removes moving objects from videos.</a>
+                            </h2>
+                            <div class="author">
+                                <span class="author--image">
+                                    <img src="./assets/images/author.webp" alt="There is a author image ">
+                                </span>
+                                <p class="author--details">By &nbsp;<a href="">Carrol Atkinson</a>&nbsp; - July 19, 2019
+                                </p>
+                            </div>
+                            <p class="posts--desc">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo sunt tempora dolor
+                                laudantium
+                                sed optio, explicabo ad
+                                deleniti impedit facilis fugit recusandae! Illo, aliquid, dicta beatae quia porro id
+                                est.
+                            </p>
+                            <a class="read-more" href="">Read More</a>
+                        </div>
+                    </div>
+                    <div class="posts">
+                        <a href="" class="posts-image"><img src="./assets/images/article2.webp" alt=""></a>
+                        <div class="posts--desc-wrapper">
+                            <span class="badge badge-red">Nature</span>
+                            <h2>
+                                <a href="">The AI magically removes moving objects from videos.</a>
+                            </h2>
+                            <div class="author">
+                                <span class="author--image">
+                                    <img src="./assets/images/author.webp" alt="There is a author image ">
+                                </span>
+                                <p class="author--details">By &nbsp;<a href="">Carrol Atkinson</a>&nbsp; - July 19, 2019
+                                </p>
+                            </div>
+                            <p class="posts--desc">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo sunt tempora dolor
+                                laudantium
+                                sed optio, explicabo ad
+                                deleniti impedit facilis fugit recusandae! Illo, aliquid, dicta beatae quia porro id
+                                est.
+                            </p>
+                            <a class="read-more" href="">Read More</a>
+                        </div>
+                    </div>
+                    <div class="posts">
+                        <a href="" class="posts-image"><img src="./assets/images/article4.webp" alt=""></a>
+                        <div class="posts--desc-wrapper">
+                            <span class="badge badge-orange">Travel</span>
+                            <h2>
+                                <a href="">The AI magically removes moving objects from videos.</a>
+                            </h2>
+                            <div class="author">
+                                <span class="author--image">
+                                    <img src="./assets/images/author.webp" alt="There is a author image ">
+                                </span>
+                                <p class="author--details">By &nbsp;<a href="">Carrol Atkinson</a>&nbsp; - July 19, 2019
+                                </p>
+                            </div>
+                            <p class="posts--desc">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo sunt tempora dolor
+                                laudantium
+                                sed optio, explicabo ad
+                                deleniti impedit facilis fugit recusandae! Illo, aliquid, dicta beatae quia porro id
+                                est.
+                            </p>
+                            <a class="read-more" href="">Read More</a>
+                        </div>
+                    </div>
+                    <div class="posts">
+                        <a href="" class="posts-image"><img src="./assets/images/article1.webp" alt=""></a>
+                        <div class="posts--desc-wrapper">
+                            <span class="badge badge-grey">POLITICS</span>
+                            <h2>
+                                <a href="">The AI magically removes moving objects from videos.</a>
+                            </h2>
+                            <div class="author">
+                                <span class="author--image">
+                                    <img src="./assets/images/author.webp" alt="There is a author image ">
+                                </span>
+                                <p class="author--details">By &nbsp;<a href="">Carrol Atkinson</a>&nbsp; - July 19, 2019
+                                </p>
+                            </div>
+                            <p class="posts--desc">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo sunt tempora dolor
+                                laudantium
+                                sed optio, explicabo ad
+                                deleniti impedit facilis fugit recusandae! Illo, aliquid, dicta beatae quia porro id
+                                est.
+                            </p>
+                            <a class="read-more" href="">Read More</a>
+                        </div>
+                    </div>
+                    <div class="posts">
+                        <a href="" class="posts-image"><img src="./assets/images/article2.webp" alt=""></a>
+                        <div class="posts--desc-wrapper">
+                            <span class="badge badge-green">POLITICS</span>
+                            <h2>
+                                <a href="">The AI magically removes moving objects from videos.</a>
+                            </h2>
+                            <div class="author">
+                                <span class="author--image">
+                                    <img src="./assets/images/author.webp" alt="There is a author image ">
+                                </span>
+                                <p class="author--details">By &nbsp;<a href="">Carrol Atkinson</a>&nbsp; - July 19, 2019
+                                </p>
+                            </div>
+                            <p class="posts--desc">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo sunt tempora dolor
+                                laudantium
+                                sed optio, explicabo ad
+                                deleniti impedit facilis fugit recusandae! Illo, aliquid, dicta beatae quia porro id
+                                est.
+                            </p>
+                            <a class="read-more" href="">Read More</a>
+                        </div>
+                    </div>
+                    <div class="posts">
+                        <a href="" class="posts-image"><img src="./assets/images/article5.webp" alt=""></a>
+                        <div class="posts--desc-wrapper">
+                            <span class="badge badge-red">sports</span>
+                            <h2>
+                                <a href="">The AI magically removes moving objects from videos.</a>
+                            </h2>
+                            <div class="author">
+                                <span class="author--image">
+                                    <img src="./assets/images/author.webp" alt="There is a author image ">
+                                </span>
+                                <p class="author--details">By &nbsp;<a href="">Carrol Atkinson</a>&nbsp; - July 19, 2019
+                                </p>
+                            </div>
+                            <p class="posts--desc">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo sunt tempora dolor
+                                laudantium
+                                sed optio, explicabo ad
+                                deleniti impedit facilis fugit recusandae! Illo, aliquid, dicta beatae quia porro id
+                                est.
+                            </p>
+                            <a class="read-more" href="">Read More</a>
+                        </div>
+                    </div>
+                    <div class="posts">
+                        <a href="" class="posts-image"><img src="./assets/images/article1.webp" alt=""></a>
+                        <div class="posts--desc-wrapper">
+                            <span class="badge badge-green">Nature</span>
+                            <h2>
+                                <a href="">The AI magically removes moving objects from videos.</a>
+                            </h2>
+                            <div class="author">
+                                <span class="author--image">
+                                    <img src="./assets/images/author.webp" alt="There is a author image ">
+                                </span>
+                                <p class="author--details">By &nbsp;<a href="">Carrol Atkinson</a>&nbsp; - July 19, 2019
+                                </p>
+                            </div>
+                            <p class="posts--desc">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo sunt tempora dolor
+                                laudantium
+                                sed optio, explicabo ad
+                                deleniti impedit facilis fugit recusandae! Illo, aliquid, dicta beatae quia porro id
+                                est.
+                            </p>
+                            <a class="read-more" href="">Read More</a>
+                        </div>
+                    </div>
+                    <div class="posts">
+                        <a href="" class="posts-image"><img src="./assets/images/article2.webp" alt=""></a>
+                        <div class="posts--desc-wrapper">
+                            <span class="badge badge-red">sports</span>
+                            <span class="badge badge-grey">Tech</span>
+                            <h2>
+                                <a href="">The AI magically removes moving objects from videos.</a>
+                            </h2>
+                            <div class="author">
+                                <span class="author--image">
+                                    <img src="./assets/images/author.webp" alt="There is a author image ">
+                                </span>
+                                <p class="author--details">By &nbsp;<a href="">Carrol Atkinson</a>&nbsp; - July 19, 2019
+                                </p>
+                            </div>
+                            <p class="posts--desc">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo sunt tempora dolor
+                                laudantium
+                                sed optio, explicabo ad
+                                deleniti impedit facilis fugit recusandae! Illo, aliquid, dicta beatae quia porro id
+                                est.
+                            </p>
+                            <a class="read-more" href="">Read More</a>
+                        </div>
+                    </div>
+                    <div class="posts">
+                        <a href="" class="posts-image"><img src="./assets/images/article5.webp" alt=""></a>
+                        <div class="posts--desc-wrapper">
+                            <span class="badge badge-red">sports</span>
+                            <span class="badge badge-orange">lifestyle</span>
+                            <h2>
+                                <a href="">The AI magically removes moving objects from videos.</a>
+                            </h2>
+                            <div class="author">
+                                <span class="author--image">
+                                    <img src="./assets/images/author.webp" alt="There is a author image ">
+                                </span>
+                                <p class="author--details">By &nbsp;<a href="">Carrol Atkinson</a>&nbsp; - July 19, 2019
+                                </p>
+                            </div>
+                            <p class="posts--desc">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo sunt tempora dolor
+                                laudantium
+                                sed optio, explicabo ad
+                                deleniti impedit facilis fugit recusandae! Illo, aliquid, dicta beatae quia porro id
+                                est.
+                            </p>
+                            <a class="read-more" href="">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pagination">
+                <ul class="pagination--info">
+                    <li><a href="">1</a></li>
+                    <li><a href="">3</a></li>
+                    <li><a href="">2</a></li>
+                    <li><a href="">4</a></li>
+                    <li><a href="">....</a></li>
+                    <li><a href="">15</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- <section>
+            <section class="showcase-wrapper">
+                <div class="showcase container">
+                    <div class="showcase--item">
+                        <div class="showcase--article">
+                            <a href=""><img src="./assets/images/article1.webp" alt="writing on notebook image"></a>
+                            <a id="showcase--overlay" href="">
+                                <div class="showcase--desc">
+                                    <h2> The AI magically removes moving objects from video. </h2>
+                                    <span>July 19,2019</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="showcase--article">
+                            <a href=""><img src="./assets/images/article2.webp" alt="tablets image"></a>
+                            <a id="showcase--overlay" href="">
+                                <div class="showcase--desc">
+                                    <h2> The AI magically removes moving objects from video. </h2>
+                                    <span>July 19,2019</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="showcase--item">
+                        <div class="showcase--article">
+                            <a href=""><img src="./assets/images/article4.webp" alt="mountain image"></a>
+                            <a id="showcase--overlay" href="">
+                                <div class="showcase--desc">
+                                    <h2> The 20 Biggest Fintech Companies In America 2019. </h2>
+                                    <span>July 19,2019</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="showcase--article">
+                            <a href=""><img src="./assets/images/article5.webp" alt="man reading book image"></a>
+                            <a id="showcase--overlay" href="">
+                                <div class="showcase--desc">
+                                    <h2> The 20 Biggest Fintech Companies In America 2019. </h2>
+                                    <span>July 19,2019</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="showcase--item showcase--mid">
+                        <div class="showcase--article">
+                            <a href=""><img src="./assets/images/article3.webp" alt="dog image"></a>
+                            <a id="showcase--overlay" href="">
+                                <div class="showcase--desc">
+                                    <span class="badge badge-red">Travel</span>
+                                    <span class="badge badge-blue">Food</span>
+                                    <h2> The AI magically removes moving objects from video. </h2>
+                                    <span>July 19,2019</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section> -->
+
+        <section>
+            <div class="showcase-wrapper2">
+                <div class="showcase2 container">
+                    <div class="showcase--item2">
+                        <div class="showcase--artices2">
+                            <a href=""><img src="./assets/images/article1.webp" alt="writing on notebook image"></a>
+                            <a id="showcase--overlay" href="">
+                                <div class="showcase--desc">
+                                    <h2> The AI magically removes moving objects from video. </h2>
+                                    <span>July 19,2019</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="showcase--item2-bottom">
+                        <div class="showcase--artices2">
+                            <a href=""><img src="./assets/images/article2.webp" alt="writing on notebook image"></a>
+                            <a id="showcase--overlay" href="">
+                                <div class="showcase--desc">
+                                    <h2> The AI magically removes moving objects from video. </h2>
+                                    <span>July 19,2019</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="showcase--artices2">
+                            <a href=""><img src="./assets/images/article4.webp" alt="writing on notebook image"></a>
+                            <a id="showcase--overlay" href="">
+                                <div class="showcase--desc">
+                                    <h2> The AI magically removes moving objects from video. </h2>
+                                    <span>July 19,2019</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="showcase--item2">
+                        <div class="showcase--artices-last">
+                            <a href=""><img src="./assets/images/article1.webp" alt="writing on notebook image"></a>
+                            <a id="showcase--overlay" href="">
+                                <div class="showcase--desc">
+                                    <h2> The AI magically removes moving objects from video. </h2>
+                                    <span>July 19,2019</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
 </body>
 
